@@ -6,9 +6,10 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  /* background-color: #f3f3f3; */
+  font-family: "Poppins", sans-serif;
   color: #444444;
-  min-height: 2000px;
+  /* min-height: 2000px; */
 }
 
 a {
@@ -21,20 +22,20 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
-}
+} */
 
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding-top: 120px;
   overflow: hidden;
 }
 
@@ -44,7 +45,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
@@ -53,18 +54,20 @@ section {
 }
 
 .section-header p {
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   padding: 0;
-  font-size: 38px;
-  line-height: 42px;
-  font-weight: 700;
+  font-size: 32px;
+  /* line-height: 42px; */
+  font-weight: 600;
   color: #012970;
 }
 
 @media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 24px;
+  }
   .section-header p {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 16px;
   }
 }
 
@@ -221,11 +224,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
+  padding: 10px 0 10px 24px;
+  /* font-family: "Nunito", sans-serif; */
   font-size: 16px;
-  font-weight: 700;
-  color: #013289;
+  font-weight: 600;
+  color: #012970;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -437,32 +440,31 @@ section {
   font-size: 26px;
 }
 
-.hero .btn-get-started {
+.hero .btn-hero {
   margin-top: 30px;
   line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
+  padding: 12px 40px;
+  border-radius: 40px;
   transition: 0.5s;
   color: #fff;
   background: #4154f1;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
-.hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
+.hero .btn-hero span {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.hero .btn-get-started i {
+.hero .btn-hero i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.hero .btn-get-started:hover i {
-  transform: translateX(5px);
+.hero .btn-hero:hover i {
+  transform: translateX(8px);
 }
 
 .hero .hero-img {
@@ -2201,62 +2203,239 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Tentang Kami page
+--------------------------------------------------------------*/
+.tentang-kami {
+  /* background-color: #f3f3f3; */
+  /* background-image: url(../img/chris-ried-ieic5Tq8YMk-unsplash.jpg); */
+}
+
+/* visi dan misi */
+.visi-misi h3{
+  font-weight: bold;
+  font-size: 24px;
+  /* text-align: center; */
+  /* color:#000 */
+}
+
+.visi-misi .content {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 56px;
+  background-color: #f3f3f3;
+  /* background-image: url(../img/chris-ried-ieic5Tq8YMk-unsplash.jpg); */
+}
+
+.visi-misi p {
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+/* profile kami */
+.profile-kami h3{
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  /* color: #fff; */
+  /* text-align: center; */
+  /* color:#000 */
+}
+.profile-kami .content{
+  background-color: #f3f3f3;
+}
+.profile-kami p {
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+/* @media (max-width: 576px) {
+  .profile-kami img {
+    background-image: hide;
+  }
+} */
+
+/* Tim Kami */
+.tim-kami h3{
+  font-weight: bold;
+  font-size: 24px;
+  /* text-transform: uppercase; */
+  /* color: #fff; */
+  /* text-align: center; */
+  /* color:#000 */
+}
+
+/* .tim-kami .img-tim{
+  background-color: #f3f3f3;
+} */
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+/*--------------------------------------------------------------
+# Galeri
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Karir
+--------------------------------------------------------------*/
+.karir {
+
+}
+
+.karir .card {
+  padding: 8px;
+}
+
+.karir .btn-karir {
+  line-height: 0;
+  padding: 16px 32px;
+  border-radius: 40px;
+  transition: 0.5s;
+  color: #4154f1;
+}
+
+.karir .btn-karir:hover {
+  background-color: #4154f1;
+  color: #fff;
+}
+
+.karir .btn-karir span {
+  font-weight: 600;
+  font-size: 16px;
+}
+.karir .btn-karir i{
+  margin-left: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.karir .btn-karir:hover i {
+  transform: translateX(8px);
+}
+
+
+/*--------------------------------------------------------------
+# Donasi
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Hubungi Kami page
+--------------------------------------------------------------*/
+.contact-us .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact-us .info i {
+  font-size: 20px;
+  color: #0257ee;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #d5e5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-us .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
+}
+
+.contact-us .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+.contact-us .info .email,
+.contact-us .info .phone {
+  margin-top: 40px;
+}
+
+.contact-us .info .email:hover i,
+.contact-us .info .address:hover i,
+.contact-us .info .phone:hover i {
+  background: #4154f1;
+  color: #fff;
+}
+
+.contact-us .contact-form .form-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121; 
+}
+
+.contact-us .contact-form .form-control {
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+
+.contact-us .contact-form button {
+  line-height: 0;
+  padding: 16px 32px;
+  border-radius: 40px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+}
+
+.contact-us .contact-form span { 
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.contact-us .contact-form i {
+  margin-left: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.contact-us .btn-kirim:hover i {
+  transform: translateX(8px);
+}
+
+/* @media (max-width: 576px) {
+  .contact-us header h2 {
+    font-size: px;
+  }
+  .contact-us header p {
+    font-size: 14px;
+  }
+} */
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
   background: #f6f9ff;
   padding: 0 0 30px 0;
   font-size: 14px;
-}
-
-.footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f6f9ff;
-  border-top: 1px solid #e1ecff;
-}
-
-.footer .footer-newsletter h4 {
-  font-size: 24px;
-  margin: 0 0 10px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  color: #012970;
-}
-
-.footer .footer-newsletter form {
-  margin-top: 20px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-  border: 1px solid #e1ecff;
-}
-
-.footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 8px;
-  width: calc(100% - 140px);
-}
-
-.footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 30px;
-  margin: 3px;
-  background: #4154f1;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 4px;
-}
-
-.footer .footer-newsletter form input[type="submit"]:hover {
-  background: #5969f3;
 }
 
 .footer .footer-top {
@@ -2370,12 +2549,5 @@ section {
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #012970;
-}
-
-.footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
   color: #012970;
 }

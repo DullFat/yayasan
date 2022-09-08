@@ -304,4 +304,37 @@
    * Initiate Pure Counter
    */
   new PureCounter();
+
+  /**
+   * Contact form
+   */
+
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwCN_t2g46zSZZfWrZcUMQ7GYQI-zIvjxkMNop6a08xyjBg2vtlr1qHXvsU9ymNZ_KtfA/exec";
+  const form = document.forms["contact-form"];
+  const btnKirim = document.querySelector(".btn-kirim");
+  const btnLoading = document.querySelector(".btn-loading");
+  const myAlert = document.querySelector(".my-alert");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    // ketika tombol submit di klik
+    // tampilkan tombol loading hilangkan tombol kirim
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        // tampilkan tombol kirim hilangkan tombol loading
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        // tampilkan alert
+        myAlert.classList.toggle('d-none');
+        // reset Form
+        form.reset();
+        console.log("Success!", response);
+      })
+
+      .catch((error) => console.error("Error!", error.message));
+  });
+  
 })();
