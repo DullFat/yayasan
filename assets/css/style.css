@@ -2331,6 +2331,35 @@ section {
   transform: translateX(8px);
 }
 
+/* karir detail */
+.karir-detail h3{
+  color: #012970;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.karir-detail i {
+  margin-right: 8px;
+}
+
+.karir-detail .btn-karir {
+  line-height: 0;
+  padding: 24px 40px;
+  border-radius: 40px;
+  transition: 0.5s;
+  color: #4154f1;
+}
+
+.karir-detail .btn-karir:hover {
+  background-color: #4154f1;
+  color: #fff;
+}
+
+.karir-detail .btn-karir span {
+  font-weight: 600;
+  font-size: 16px;
+}
 
 /*--------------------------------------------------------------
 # Donasi
