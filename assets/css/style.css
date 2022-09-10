@@ -183,7 +183,7 @@ section {
 
 .header.header-scrolled {
   background: #fff;
-  padding: 15px 0;
+  padding: 16px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
@@ -2369,7 +2369,9 @@ section {
 /*--------------------------------------------------------------
 # Donasi
 --------------------------------------------------------------*/
+.donasi {
 
+}
 
 /*--------------------------------------------------------------
 # Hubungi Kami page
@@ -2468,8 +2470,9 @@ section {
 --------------------------------------------------------------*/
 .footer {
   background: #f6f9ff;
-  padding: 0 0 30px 0;
+  padding: 0 0 32px 0;
   font-size: 14px;
+  box-shadow: 0px 2px 24px rgba(1, 41, 112, 0.1);
 }
 
 .footer .footer-top {
