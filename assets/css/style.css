@@ -31,15 +31,16 @@ h6 {
   font-family: "Nunito", sans-serif;
 } */
 
-.akhir {
-  margin-bottom: 128px;
+main {
+  padding-top: 120px;
+  padding-bottom: 128px;
 }
 
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding-top: 120px;
+  padding-top: px;
   overflow: hidden;
 }
 
