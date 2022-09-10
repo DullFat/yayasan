@@ -205,26 +205,26 @@
    * Porfolio isotope and filter
    */
   window.addEventListener("load", () => {
-    let portfolioContainer = select(".portfolio-container");
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: ".portfolio-item",
+    let galeriContainer = select(".galeri-container");
+    if (galeriContainer) {
+      let galeriIsotope = new Isotope(galeriContainer, {
+        itemSelector: ".galeri-item",
         layoutMode: "fitRows",
       });
 
-      let portfolioFilters = select("#portfolio-flters li", true);
+      let galeriFilters = select("#galeri-flters li", true);
 
       on(
         "click",
-        "#portfolio-flters li",
+        "#galeri-flters li",
         function (e) {
           e.preventDefault();
-          portfolioFilters.forEach(function (el) {
+          galeriFilters.forEach(function (el) {
             el.classList.remove("filter-active");
           });
           this.classList.add("filter-active");
 
-          portfolioIsotope.arrange({
+          galeriIsotope.arrange({
             filter: this.getAttribute("data-filter"),
           });
           aos_init();
@@ -235,16 +235,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox
+   * Initiate galeri lightbox
    */
-  const portfolioLightbox = GLightbox({
-    selector: ".portfokio-lightbox",
+  const galeriLightbox = GLightbox({
+    selector: ".galeri-lightbox",
   });
 
   /**
-   * Portfolio details slider
+   * galeri details slider
    */
-  new Swiper(".portfolio-details-slider", {
+  new Swiper(".galeri-details-slider", {
     speed: 400,
     autoplay: {
       delay: 5000,
