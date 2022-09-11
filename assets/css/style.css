@@ -53,12 +53,18 @@ section {
 }
 
 .section-header h2 {
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin: 0;
-  color: #4154f1;
+  color: #1e1e1e;
+  font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.section-header em {
+	font-style: normal;
+	color: #4154f1;
 }
 
 .section-header p {
@@ -1982,6 +1988,25 @@ section {
 }
 
 /* profile kami */
+.profile-video {
+  background-image: url(../img/about.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.profile-video i {
+  font-size: 56px;
+  color: #0257ee;
+  width: 72px;
+  height: 72px;
+  background: #d5e5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
 .profile-kami h3{
   margin-top: 16px;
   font-weight: bold;
@@ -1990,28 +2015,48 @@ section {
   /* text-align: center; */
   /* color:#000 */
 }
+
 .profile-kami .content{
   background-color: #f3f3f3;
+  padding: 136px 80px 160px 80px;
 }
+
+.profile-kami em{
+  font-style: normal;
+  color: #4154f1;
+}
+
 .profile-kami p {
+  letter-spacing: 1px;
   font-size: 16px;
   color: #3a3a3a;
 }
 
-/* @media (max-width: 576px) {
-  .profile-kami img {
-    background-image: hide;
+@media (max-width: 576px) {
+  .profile-video {
+    padding: 64px 0 64px 0;
   }
-} */
+
+  .profile-kami .content {
+    padding: 40px 24px 48px 24px;
+  }
+}
 
 /* Tim Kami */
+
 .tim-kami h3{
+	color: #1e1e1e;
   font-weight: bold;
   font-size: 24px;
-  /* text-transform: uppercase; */
-  /* color: #fff; */
-  /* text-align: center; */
-  /* color:#000 */
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tim-kami em {
+	font-style: normal;
+	color: #4154f1;
 }
 
 .tim-kami .tim-item {
