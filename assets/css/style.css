@@ -32,7 +32,7 @@ h6 {
 } */
 
 main {
-  padding: 120px 0 112px 0;
+  padding: 0px 0 112px 0;
 }
 
 .margin{
@@ -79,55 +79,32 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #012970;
-  min-height: 40px;
-  margin-top: 82px;
-  color: #fff;
+/* Page Head */
+.page-heading {
+	text-align: center;
+	background-image: url(../img/hero-bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 224px 0 152px 0;
+	color: #012970;
+  margin-bottom: 72px;
 }
 
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 57px;
-  }
+.page-heading h1 {
+	text-transform: capitalize;
+	font-size: 32px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
 }
 
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol a {
-  color: #fff;
-  transition: 0.3s;
-}
-
-.breadcrumbs ol a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #8894f6;
-  content: "/";
+.page-heading span {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #4154f1;
+	display: block;
 }
 
 /*--------------------------------------------------------------
@@ -176,13 +153,15 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
+  /* background-color: #fff; */
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 24px 0;
 }
 
 .header.header-scrolled {
   background: #fff;
+  color: #012970; 
   padding: 16px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -201,7 +180,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-top: 3px;
 }
 
@@ -233,10 +212,11 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 24px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   color: #012970;
+  /* color: #fff; */
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -2034,9 +2014,9 @@ section {
   /* color:#000 */
 }
 
-/* .tim-kami .img-tim{
-  background-color: #f3f3f3;
-} */
+.tim-kami .tim-item {
+  box-shadow: 0px 0px 12px rgba(127, 137, 161, 0.25);
+}
 
 .social-link {
   width: 30px;
@@ -2514,122 +2494,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
+  margin-top: 96px;
   background: #f6f9ff;
   padding: 0 0 32px 0;
   font-size: 14px;
   box-shadow: 0px -6px 16px rgba(1, 41, 112, 0.1);
 }
 
-.footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
-  background-size: contain;
-  border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
-  padding: 60px 0 30px 0;
-}
-
-@media (max-width: 992px) {
-  .footer .footer-top {
-    background-position: center bottom;
-  }
-}
-
-.footer .footer-top .footer-info {
-  margin-bottom: 30px;
-}
-
-.footer .footer-top .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 15px;
-}
-
-.footer .footer-top .footer-info .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.footer .footer-top .footer-info .logo span {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #012970;
-  font-family: "Nunito", sans-serif;
-  margin-top: 3px;
-}
-
-.footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
-}
-
-.footer .footer-top .social-links a {
-  font-size: 20px;
-  display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
-  line-height: 0;
-  margin-right: 10px;
-  transition: 0.3s;
-}
-
-.footer .footer-top .social-links a:hover {
-  color: #012970;
-}
-
-.footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #012970;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-.footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #d0d4fc;
-  font-size: 12px;
-  line-height: 0;
-}
-
-.footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-.footer .footer-top .footer-links ul a {
-  color: #013289;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-
-.footer .footer-top .footer-links ul a:hover {
-  color: #4154f1;
-}
-
-.footer .footer-top .footer-contact p {
-  line-height: 26px;
-}
-
 .footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 32px;
   color: #012970;
 }
