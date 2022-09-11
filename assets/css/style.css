@@ -35,7 +35,7 @@ main {
   padding: 0px 0 112px 0;
 }
 
-.margin{
+.margin {
   padding: 40px 0 88px 0;
 }
 
@@ -63,8 +63,8 @@ section {
 }
 
 .section-header em {
-	font-style: normal;
-	color: #4154f1;
+  font-style: normal;
+  color: #4154f1;
 }
 
 .section-header p {
@@ -87,30 +87,30 @@ section {
 
 /* Page Head */
 .page-heading {
-	text-align: center;
-	background-image: url(../img/hero-bg.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 224px 0 152px 0;
-	color: #012970;
+  text-align: center;
+  background-image: url(../img/hero-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 224px 0 152px 0;
+  color: #012970;
   margin-bottom: 72px;
 }
 
 .page-heading h1 {
-	text-transform: capitalize;
-	font-size: 32px;
-	font-weight: 800;
-	letter-spacing: 2px;
-	margin-bottom: 18px;
+  text-transform: capitalize;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
 }
 
 .page-heading span {
-	font-size: 16px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: #4154f1;
-	display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4154f1;
+  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -167,7 +167,7 @@ section {
 
 .header.header-scrolled {
   background: #fff;
-  color: #012970; 
+  color: #012970;
   padding: 16px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -1967,7 +1967,7 @@ section {
 
 /* visi dan misi */
 
-.visi-misi h3{
+.visi-misi h3 {
   font-weight: bold;
   font-size: 24px;
   /* text-align: center; */
@@ -2007,7 +2007,7 @@ section {
   border-radius: 50px;
 }
 
-.profile-kami h3{
+.profile-kami h3 {
   margin-top: 16px;
   font-weight: bold;
   font-size: 24px;
@@ -2016,12 +2016,12 @@ section {
   /* color:#000 */
 }
 
-.profile-kami .content{
+.profile-kami .content {
   background-color: #f3f3f3;
   padding: 136px 80px 160px 80px;
 }
 
-.profile-kami em{
+.profile-kami em {
   font-style: normal;
   color: #4154f1;
 }
@@ -2044,8 +2044,8 @@ section {
 
 /* Tim Kami */
 
-.tim-kami h3{
-	color: #1e1e1e;
+.tim-kami h3 {
+  color: #1e1e1e;
   font-weight: bold;
   font-size: 24px;
   font-weight: 600;
@@ -2055,8 +2055,8 @@ section {
 }
 
 .tim-kami em {
-	font-style: normal;
-	color: #4154f1;
+  font-style: normal;
+  color: #4154f1;
 }
 
 .tim-kami .tim-item {
@@ -2084,8 +2084,91 @@ section {
 }
 
 /*--------------------------------------------------------------
+# program
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# kegiatan
+--------------------------------------------------------------*/
+.single-services {
+  margin-top: 140px;
+}
+
+#tabs ul {
+  margin: 0;
+  padding: 0;
+}
+#tabs ul li {
+  align-content: center;
+  margin-bottom: 16px;
+  display: inline-block;
+  width: 100%;
+}
+#tabs ul li:last-child {
+  margin-bottom: 0px;
+}
+#tabs ul li a {
+  border-radius: 16px;
+  text-transform: capitalize;
+  width: 100%;
+  padding: 24px 24px;
+  display: inline-block;
+  background-color: #a5c5fe;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+#tabs ul li a i {
+  font-size: 16px;
+  float: right;
+  margin-top: 5px;
+}
+#tabs ul .ui-tabs-active span {
+  background: #faf5b2;
+  border: #faf5b2;
+  line-height: 90px;
+  border-bottom: none;
+}
+#tabs ul .ui-tabs-active a {
+  color: #fff;
+}
+#tabs ul .ui-tabs-active span {
+  color: #1e1e1e;
+}
+.tabs-content {
+  margin-left: 30px;
+  text-align: left;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.tabs-content img {
+  overflow: hidden;
+}
+.tabs-content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.tabs-content p {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 0px;
+}
+
+/*--------------------------------------------------------------
+# publikasi
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 # galeri
 --------------------------------------------------------------*/
+.galeri-foto h2 {
+  text-align: start;
+}
 
 .galeri #galeri-flters {
   padding: 0;
@@ -2317,17 +2400,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Galeri
---------------------------------------------------------------*/
-
-
-.galeri-foto h2 {
-  text-align: start;
-
-}
-
-
-/*--------------------------------------------------------------
 # Karir
 --------------------------------------------------------------*/
 .karir .card {
@@ -2351,7 +2423,7 @@ section {
   font-weight: 600;
   font-size: 16px;
 }
-.karir .btn-karir i{
+.karir .btn-karir i {
   margin-left: 8px;
   font-size: 16px;
   transition: 0.3s;
@@ -2362,7 +2434,7 @@ section {
 }
 
 /* karir detail */
-.karir-detail h3{
+.karir-detail h3 {
   color: #012970;
   font-weight: 600;
   margin-bottom: 16px;
@@ -2441,8 +2513,6 @@ section {
   background-color: #4154f1;
 }
 
-
-
 /*--------------------------------------------------------------
 # Hubungi Kami page
 --------------------------------------------------------------*/
@@ -2495,7 +2565,7 @@ section {
 .contact-us .contact-form .form-label {
   font-size: 16px;
   font-weight: 400;
-  color: #212121; 
+  color: #212121;
 }
 
 .contact-us .contact-form .form-control {
@@ -2512,7 +2582,7 @@ section {
   background: #4154f1;
 }
 
-.contact-us .contact-form span { 
+.contact-us .contact-form span {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;

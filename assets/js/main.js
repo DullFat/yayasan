@@ -341,8 +341,15 @@
    */
   new PureCounter();
 
-  // /* 
-  // magnificPopup video view 
+  /**
+   * Tabs
+   */
+  $(function () {
+    $("#tabs").tabs();
+  });
+
+  // /*
+  // magnificPopup video view
   // */
   // $('.popup-video').magnificPopup({
   //   type: "iframe",
