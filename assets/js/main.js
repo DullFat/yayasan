@@ -244,7 +244,7 @@
     let galeriContainer = select(".galeri-container");
     if (galeriContainer) {
       let galeriIsotope = new Isotope(galeriContainer, {
-        itemSelector: ".galeri-item",
+        itemSelector: ".item-selector",
         layoutMode: "fitRows",
       });
 

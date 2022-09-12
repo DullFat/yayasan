@@ -412,6 +412,13 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Nav-2
+--------------------------------------------------------------*/
+.menu .navbar {
+  padding: 0px 0px 16px 0px;
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
@@ -2047,21 +2054,6 @@ section {
   background-color: #F7F7F7;
 }
 
-.tim-kami h3 {
-  color: #212121;
-  font-weight: bold;
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.tim-kami em {
-  font-style: normal;
-  color: #4154f1;
-}
-
 .tim-kami .tim-item {
   box-shadow: 0px 0px 12px rgba(127, 137, 161, 0.25);
 }
@@ -2086,6 +2078,10 @@ section {
   color: #555;
 }
 
+
+
+
+
 /*--------------------------------------------------------------
 # program
 --------------------------------------------------------------*/
@@ -2093,6 +2089,56 @@ section {
 /*--------------------------------------------------------------
 # kegiatan
 --------------------------------------------------------------*/
+.kegiatan .kegiatan-item {
+  border: none;
+}
+
+.kegiatan span {
+  color: #4154f1;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.kegiatan h5 {
+  color: #212121;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.kegiatan p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.kegiatan .card {
+  padding: 8px;
+}
+
+.kegiatan .btn-kegiatan {
+  /* line-height: 0; */
+  /* padding: 16px 32px; */
+  /* border-radius: 40px; */
+  transition: 0.5s;
+  color: #4154f1;
+}
+
+.kegiatan .btn-kegiatan span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.kegiatan .btn-kegiatan i {
+  margin-left: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.kegiatan .btn-kegiatan:hover i {
+  transform: translateX(8px);
+}
+
 /*--------------------------------------------------------------
 # tab
 --------------------------------------------------------------*/
@@ -2158,8 +2204,8 @@ section {
 }
 
 .tabs-content img {
-  
-  height: 540px;
+  max-width: 100%;
+  /* height: 540px; */
   overflow: hidden;
 }
 
@@ -2184,9 +2230,6 @@ section {
 /*--------------------------------------------------------------
 # galeri
 --------------------------------------------------------------*/
-.galeri-foto h2 {
-  text-align: start;
-}
 
 .galeri #galeri-flters {
   padding: 0;
