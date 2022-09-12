@@ -2089,8 +2089,12 @@ section {
 /*--------------------------------------------------------------
 # kegiatan
 --------------------------------------------------------------*/
-.kegiatan .kegiatan-item {
-  border: none;
+.kegiatan .card {
+  border-radius: 24px;
+}
+
+.kegiatan .kegiatan-item img {
+  border-radius: 16px;
 }
 
 .kegiatan span {
