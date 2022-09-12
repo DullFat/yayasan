@@ -344,9 +344,7 @@
   /**
    * Tabs
    */
-  $(function () {
     $("#tabs").tabs();
-  });
 
   // /*
   // magnificPopup video view
