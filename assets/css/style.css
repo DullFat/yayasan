@@ -92,7 +92,7 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 224px 0 152px 0;
+  padding: 168px 0 152px 0;
   color: #012970;
   margin-bottom: 72px;
 }
@@ -102,7 +102,7 @@ section {
   font-size: 32px;
   font-weight: 800;
   letter-spacing: 2px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .page-heading span {
