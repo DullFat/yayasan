@@ -412,11 +412,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Nav-2
+# sidebar
 --------------------------------------------------------------*/
-.menu .navbar {
-  padding: 0px 0px 16px 0px;
-}
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -2078,13 +2076,81 @@ section {
   color: #555;
 }
 
-
-
-
-
 /*--------------------------------------------------------------
 # program
 --------------------------------------------------------------*/
+.program h3 {
+  text-transform: uppercase;
+  color: #012970;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.program ul {
+  margin: 0;
+  padding: 0;
+}
+
+.program ul li {
+  align-content: center;
+  margin-bottom: 8px;
+  display: inline-block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #012970;
+  /* background-color: #012970; */
+}
+
+.program ul li a {
+  /* border-radius: 8px; */
+  width: 100%;
+  padding: 12px 24px;
+  display: inline-block;
+  border: initial;  
+  font-size: 16px;
+  color: #012970;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.program a:hover,
+.program .active,
+.program .active:focus,
+.program li:hover > a {
+  color: #fff;
+  border: none;
+  background-color: #012970;
+}
+
+.tabs-content {
+  text-align: left;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.tabs-content img {
+  max-width: 100%;
+  /* height: 540px; */
+  overflow: hidden;
+}
+
+.tabs-content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.tabs-content p {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 0px;
+}
+
 
 /*--------------------------------------------------------------
 # kegiatan
@@ -2141,90 +2207,6 @@ section {
 
 .kegiatan .btn-kegiatan:hover i {
   transform: translateX(8px);
-}
-
-/*--------------------------------------------------------------
-# tab
---------------------------------------------------------------*/
-.single-services {
-  margin-top: 132px;
-}
-
-#tabs ul {
-  margin: 0;
-  padding: 0;
-}
-
-#tabs ul li {
-  align-content: center;
-  margin-bottom: 16px;
-  display: inline-block;
-  width: 100%;
-}
-
-#tabs ul li:last-child {
-  margin-bottom: 0px;
-}
-
-#tabs ul li a {
-  border-radius: 8px;
-  text-transform: capitalize;
-  width: 100%;
-  padding: 24px 24px;
-  display: inline-block;
-  background-color: #012970;
-  font-size: 16px;
-  color: #fff;
-  letter-spacing: 0.5px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-#tabs ul li a i {
-  font-size: 16px;
-  float: right;
-  margin-top: 5px;
-}
-
-#tabs ul .ui-tabs-active span {
-  background: #faf5b2;
-  border: #faf5b2;
-  line-height: 90px;
-  border-bottom: none;
-}
-
-#tabs ul .ui-tabs-active a {
-  color: #fff;
-}
-
-#tabs ul .ui-tabs-active span {
-  color: #1e1e1e;
-}
-
-.tabs-content {
-  text-align: left;
-  display: inline-block;
-  transition: all 0.3s;
-}
-
-.tabs-content img {
-  max-width: 100%;
-  /* height: 540px; */
-  overflow: hidden;
-}
-
-.tabs-content h4 {
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 0.25px;
-  margin-bottom: 15px;
-  margin-top: 30px;
-}
-
-.tabs-content p {
-  font-size: 14px;
-  color: #7a7a7a;
-  margin-bottom: 0px;
 }
 
 /*--------------------------------------------------------------

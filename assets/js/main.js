@@ -341,10 +341,6 @@
    */
   new PureCounter();
 
-  /**
-   * Tabs
-   */
-    $("#tabs").tabs();
 
   // /*
   // magnificPopup video view
