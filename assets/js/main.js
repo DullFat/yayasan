@@ -204,7 +204,7 @@
   /**
    * Donasi Slider
    */
-  new Swiper(".donasi-slider", {
+  new Swiper(".pagination-slider", {
     speed: 400,
     loop: true,
     autoplay: {
@@ -290,34 +290,6 @@
       el: ".swiper-pagination",
       type: "bullets",
       clickable: true,
-    },
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper(".testimonials-slider", {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40,
-      },
-
-      1200: {
-        slidesPerView: 3,
-      },
     },
   });
 
